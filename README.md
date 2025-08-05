@@ -15,31 +15,33 @@ Change the current layout to bring some responsive behaviour. Only implement a s
 ### 2. SSR vs SPA
 
 Implement the call to get the user information when navigating to their profile using a [Nuxt built-in hook](https://nuxt.com/docs/4.x/getting-started/data-fetching).
-Use the following endpoint: <code>https://jsonplaceholder.typicode.com/users/{id}</code>
+Use the following endpoint: <code>https://jsonplaceholder.typicode.com/users/{id}</code><br/>
+Display some information, but do not add too much styling.
 
-- Display some information, but do not add too much styling.
-- Change the Nuxt configuration to behave in SPA (single-page-application) mode, and compare the behavior when previously using the SSR (server-side-rendering) mode.
+Change the Nuxt configuration to behave in SPA (single-page-application) mode, and compare the behavior when previously using the SSR (server-side-rendering) mode.
 
 ### 3. Page loading performance
 
 Navigate to the `/gallery` page which contains a list of photos. This page is meant to be publicly accessible.
 
 - What would be your 2-3 recommendations or approaches to guide a small team of developers to improve the loading performance of the Gallery page?
-  Try to suggest something that the team can easily align on and let them find their own solutions to implement it.
-  Optionally, include a brief code draft or example to illustrate how to begin applying your recommendation.
-- What would be **your own top recommendations** (max. 3) if **you** were responsible for optimizing the page? Implement a few of these recommendations directly in code, focusing on those you consider most impactful.
+  <br/> Try to suggest something that the team can easily align on and let them find their own solutions to implement it.
+  <br/> Optionally, include a brief code draft or example to illustrate how to begin applying your recommendation.
+
+- What would be your own top recommendations (max. 3) if you were responsible for optimizing the page? <br/> Implement a few of these recommendations directly in code, focusing on those you consider most impactful.
 
 ### 4. Architecture
 
 The Gallery currently fetches its data from `/api/gallery`, using a [Nuxt server route](https://nuxt.com/docs/guide/directory-structure/server#api-routes) which acts as a minimal Backend-for-Frontend (BFF).
 
-- Improve the current implementation - but focus on making a decision for a quick first iteration.
+Improve the current implementation - but focus on making a decision for a quick first iteration.
   You can choose one of the following approach as example:
   - Continue with the current setup (BFF)
   - Move the all logic into the client-side
   - Use a static site generation (SSG) approach
   - Any other approach that can simplify or quickly optimize the current implementation
-- (Bonus) **Could Nuxt be used as a full backend?** In what scenarios would that make sense, and what might be the limitations?
+
+**(Bonus)** Could Nuxt be used as a full backend? In what scenarios would that make sense, and what might be the limitations?
 
 ### (Bonus) Accessibility
 
@@ -48,7 +50,7 @@ Where would you start if you were to improve it? You can present a rough plan of
 
 ## Goal
 
-Please take no more than 1-2 hours for this task. We are aware of everyone’s time limitations and appreciate you taking time to complete this challenge. The goal of the exercise is not to invest too much time to search or implement the perfect solution but rather to discuss the pros and cons of the different approaches on the different tasks. Let us know if you have any questions. We’d prefer to talk about a problem first before investing too much time into the wrong solution. We are happy to help!
+Please take no more than ~2 hours for this task. We are aware of everyone’s time limitations and appreciate you taking time to complete this challenge. The goal of the exercise is not to invest too much time to search or implement the perfect solution but rather to discuss the pros and cons of the different approaches on the different tasks. Let us know if you have any questions. We’d prefer to talk about a problem first before investing too much time into the wrong solution. We are happy to help!
 
 There are no right or wrong answers.
 

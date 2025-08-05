@@ -53,3 +53,14 @@ footer {
   background-color: #fbd6d2;
   padding: 10px;
 }
+
+.challenge-tasks li::marker {
+  font-weight: bold;
+}
+
+.challenge-tasks li[data]::marker {
+  content: '\26A0';
+  background: white;
+  opacity: 0.01;
+  font-size: 0;
+}
