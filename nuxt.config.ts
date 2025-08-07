@@ -1,5 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// @ts-ignore
 export default defineNuxtConfig({
+  // ssr: false, // enable SPA
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   app: {

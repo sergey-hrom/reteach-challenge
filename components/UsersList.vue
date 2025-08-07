@@ -22,7 +22,7 @@ const search = ref('');
 
 const filteredUsers = computed(() =>
   users
-    ? users.value.filter((user) =>
+    ? users.value?.filter((user) =>
         user.name.toLowerCase().includes(search.value.toLowerCase())
       )
     : []
